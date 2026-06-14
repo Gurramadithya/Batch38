@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>grid3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent {
+            display: grid;
+            height: 100vh;
+            gap: 10px;
+            text-align: center;
+            grid-template-columns: 10%;
+            grid-template-rows: 20% 30% 30% 20%;
+        }
+        .box-item{
+            border: 1px solid yellowgreen;
+        }
+        .x1{
+            grid-column: 1/4;
+            background-color: yellowgreen;
+        }
+        .x2{
+            grid-row: 2/4;
+            grid-column: 1/2;
+            background-color: yellowgreen;
+        }
+        .x3{
+            grid-column:2/4 ;
+            background-color: yellowgreen;
+        }
+        .x4{
+            background-color: yellowgreen
+        }
+        .x5{
+                background-color: yellowgreen;
+        }
+        .x6{
+            grid-column:1/4 ;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box-item x1"></div>
+        <div class="box-item x2"></div>
+        <div class="box-item x3"></div>
+        <div class="box-item x4"></div>
+        <div class="box-item x5"></div>
+        <div class="box-item x6"></div>
+    </div>
+</body>
+</html>

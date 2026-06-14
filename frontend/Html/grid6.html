@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 10% 80% 10%;
+            height: 100vh; 
+        }
+       
+        .x1{
+            grid-column: 1/4;
+            background-color: grey;
+        }
+        .x2{
+            grid-row: 2/3;
+            background-color: cyan;
+        }
+        .x3{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-color: palevioletred;
+        }
+        .x4{
+            grid-column:3/4;
+            grid-row: 2/3;
+            background-color: cyan;
+        }
+        .x5{
+            background-color: grey;
+            grid-column:1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="common x1">1</div>
+        <div class="common x2">2</div>
+        <div class="common x3">3</div>
+        <div class="common x4">4</div>
+        <div class="common x5">5</div>
+    </div>
+</body>
+</html>

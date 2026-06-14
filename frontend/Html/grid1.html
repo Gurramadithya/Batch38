@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 98vh;
+            background-color: black;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 200px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 1rem;
+            grid-template-areas:
+                " box-1 box-2 box-2 box-3 box-3"
+                " box-1 box-4 box-5 box-5 box-6"
+                " box-9 box-7 box-7 box-8 box-6";
+        }
+
+        .x1,
+        .x6,
+        .x7 {
+            background-color: red;
+        }
+
+        .x2,
+        .x8 {
+            background-color: teal;
+        }
+
+        .x5,
+        .x9 {
+            background-color: white;
+        }
+
+        .x3,
+        .x4 {
+            background-color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box-item x1" style="grid-area: box-1;">1</div>
+        <div class="box-item x2" style="grid-area: box-2;">2</div>
+        <div class="box-item x3" style="grid-area: box-3;">3</div>
+        <div class="box-item x4" style="grid-area: box-4;">4</div>
+        <div class="box-item x5" style="grid-area: box-5;">5</div>
+        <div class="box-item x6" style="grid-area: box-6;">6</div>
+        <div class="box-item x7" style="grid-area: box-7;">7</div>
+        <div class="box-item x8" style="grid-area: box-8;">8</div>
+        <div class="box-item x9" style="grid-area: box-9;">9</div>
+    </div>
+</body>
+
+</html>

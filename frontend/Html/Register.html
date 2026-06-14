@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            EMPLOYEE MANAGEMENT SYSTEM
+        </h1>
+    </header>
+    <nav>
+        <a href="http://127.0.0.1:5501/about.html">About</a>
+        <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+        <a href="http://127.0.0.1:5501/login.html">Login</a>
+        <a href="http://127.0.0.1:5501/Register.html">Register</a>
+    </nav>
+    <fieldset>
+        <legend>REGISTRATION FORM</legend>
+        <form name="REGISTRATION FORM">
+            <table>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td>
+                        <input type="txt" name="fname" placeholder="Enter your first name">
+                    </td>
+                    <td> <Span>(Max 50 Character Allowed) </Span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td>
+                        <input type="txt" name="Lname" placeholder="Enter your Last name">
+                    </td>
+                    <td> <Span>(Max 50 Character Allowed) </Span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Email ID</label></td>
+                    <td>
+                        <input type="email" name="emailid" placeholder="Enter Email Address">
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><label>Password</label></td>
+                    <td>
+                        <input type="password" name="pass" placeholder="Enter Password">
+                    </td>
+                    <td><span>(Enter valid password)</span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td>
+                        <input type="tel" name="phno" placeholder="Enter your monile number">
+                    </td>
+                    <td><span>(10 digits Allowed)</span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="Gender" value="male">Male
+                        <input type="radio" name="Gender" value="female">feMale
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><label>Date-of-Birth</label></td>
+                    <td>
+                        <input type="date" name="dob">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Favarate color</td>
+                    <td><input type="color" placeholder="Choose your fav color"></td>
+                </tr>
+
+                <tr>
+                    <td><label>City</label></td>
+                    <td>
+                        <input type="text" name="cname" placeholder="Ente your city">
+                    </td>
+                    <td> <Span>(Max 50 charcters Allowed)</Span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Pincode</label></td>
+                    <td>
+                        <input type="number" name="pincode" placeholder="Ente your Are pincode">
+                    </td>
+                    <td> <Span>(Max 5 digit's Allowed)</Span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Country</label></td>
+                    <td>
+                        <select name="sname">
+                            <option name=sname value="ind">india</option>
+                            <option name=sname value="usa">america</option>
+                            <option name=sname value="ita">italy</option>
+                            <option name=sname value="australiaa">australia</option>
+                        </select>
+
+                    </td>
+                    <td> </td>
+                </tr>
+
+
+                <tr>
+                    <td><label>Hobbies</label></td>
+                    <td>
+                        <input type="checkbox" name="hbs" value="Drawing">Drawing
+                        <input type="checkbox" name="hbs" value="Singing">Singing
+                        <input type="checkbox" name="hbs" value="Dancing">Dancing
+                        <br>
+                        <input type="checkbox" name="hbs" value="Sketching">sketching
+
+                        <input type="checkbox" name="hbs" value="others">others
+                        <br>
+
+                        <input type="text" name="hbs" placeholder="EX-Teaching">(Max 50 Characters Allowed)
+                    </td>
+                    <td> <Span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Qualification</td>
+                    <td>
+                        <input type="checkbox" name="qus" value="High School(10th)">High School(10th)<br>
+                        <input type="checkbox" name="qus" value="Higher School(12th)">Higher School(12th)<br>
+                        <input type="checkbox" name="qus" value="Graduation(Bachelors)">Graduation(Bachelors)<br>
+                        <input type="checkbox" name="qus" value="post Graduation(Master)">post Graduation(Master)<br>
+                        <input type="checkbox" name="qus" value="phd">phd
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><label>Courses<br>Applied For</label></td>
+                    <td>
+                        <input type="checkbox" name="Courses1"
+                            value="BCA(Bachelor of computer Applications)">BCA(Bachelor of computer Applications) <br>
+
+                        <input type="checkbox" name="Courses" value="B.Com(Bachelor of Commerece)">
+                        B.Com(Bachelor of Commerece)<br>
+
+                        <input type="checkbox" name="Courses" value="B.Sc(Bachelor of Science)">B.Sc(Bachelor of
+                        Science)<br>
+
+                        <input type="checkbox" name="Courses" value="BA(bachelor of Arts)">BA(bachelor of Arts)<br>
+
+                        <input type="checkbox" name="Courses" value="MCA(Master of Computer Applications)">>MCA(Master
+                        of Computer Applications)<br>
+
+                        <input type="checkbox" name="Courses" value="M.Com(Master of computer Applications)">
+                        M.Com(Master of computer Applications)<br>
+                        <input type="checkbox" name="Courses" value="M.Sc(Master of science)">M.Sc(Master of
+                        science)<br>
+
+                        <input type="checkbox" name="Courses" value="Ma(Master of Arts)">Ma(Master of Arts)<br>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register">
+                        <input type="reset" value="cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>

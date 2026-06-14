@@ -1,0 +1,23 @@
+.c1{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    margin: 20px;
+    width: 20%;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    background: linear-gradient(45deg,red,green);
+    color: whitesmoke;
+
+}
+p{
+    text-align: justify;
+    padding: 20px;
+}

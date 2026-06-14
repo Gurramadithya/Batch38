@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+td, th{
+    text-align: center;
+    vertical-align: middle;
+}
+.sub1{
+    color: blue;
+    font-weight: bold;
+}
+.sub2{
+    color: orange;
+    font-weight: bold;
+}
+.sub3{
+    color: purple;
+    font-weight: bold;
+}
+.sub4{
+    color: green;
+    font-weight: bold;
+}
+.sub5{
+    color: red;
+    font-weight: bold;
+} 
