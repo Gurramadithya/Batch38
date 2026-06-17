@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+</head>
+
+<body>
+    <script>
+        // Implicit Type Casting
+
+        var a = 10;
+        var b = a + "5";
+        console.log(b);             //105
+        console.log(typeof b);      //String
+
+        var c = "10";
+        var d = c - 5;
+        console.log(d);             //5
+        console.log(typeof d);      //number
+
+        var e = "15";
+        var f = 2 * e;
+        console.log(f);             //30
+        console.log(typeof f)        //number
+
+        var tr = 1;
+        var br = true + tr;
+        console.log(br);            //2
+        console.log(typeof br);     //number
+
+
+        //Explicit Type Casting
+
+        var g = "10";
+        var h = Number(g);
+        console.log(h);              //10
+        console.log(typeof h);       //number
+
+        var $ = 30;
+        var op = String($);
+        console.log(op);            //30
+        console.log(typeof op);      //String
+
+        var i = 1;
+        var j = Boolean(i);
+        console.log(j);             //true
+        console.log(typeof j);      //Boolean
+
+        var k = 0;
+        var l = Boolean(k);
+        console.log(l);             //false
+        console.log(typeof l);      //Boolean
+
+    </script>
+</body>
+
+</html>
