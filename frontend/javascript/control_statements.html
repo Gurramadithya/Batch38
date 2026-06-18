@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+
+    <script>
+
+        var year = 1988; Month = "feb"; noofdays = 0;
+        if (Month === "jan" || Month === "mar" || Month === "may" || Month === "jul" || Month === "aug" || Month === "oct" || Month === "dec") {
+            noofdays = 31;
+        } else if (Month == "feb") {
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                noofdays = 29;
+            } else {
+                noofdays = 28;
+            }
+        }else if(Month==="apr" || Month==="jun" || Month==="sep" ||Month==="nov"){
+            noofdays=30;
+        }
+        console.log("year=",year ,"month=",Month , "noofdays=",noofdays);
+    </script>
+
+</body>
+
+</html>
