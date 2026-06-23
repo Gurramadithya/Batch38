@@ -1,0 +1,128 @@
+<!-- empname= Krishna
+    annalsole = 25000000,
+    year=2026
+    month="feb"
+    leaves=0
+
+    calculate 
+
+    use swtich and if-else or any thing
+
+    daysal, monthsal
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var empname = "Adithya";
+        var annsal = 2500000;
+        var year = 2026;
+        var month = "feb"
+        var leaves = 7;
+
+        var days;
+        var monthsal;
+        var daysal;
+        var totalsal;
+
+        switch (month) {
+            case "jan":
+            case "mar":
+            case "may":
+            case "jul":
+            case "aug":
+            case "oct":
+            case "dec":
+                days = 31;
+                break;
+            case "feb":
+                if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                    days = 29;
+                } else {
+                    days = 28;
+                }
+                break;
+
+            case "apr":
+            case "jun":
+            case "sep":
+            case "nov":
+                days = 30;
+                break;
+        }
+        monthsal = annsal / 12;
+        daysal = monthsal / days;
+        totalsal = monthsal - (daysal * leaves);
+
+        console.log("Empolyee:", empname);
+        console.log("Monthly salary:", monthsal.toFixed(2));
+        console.log("Daily salary:", daysal);
+        console.log("leaves taken", leaves);
+        console.log("final salary:", totalsal)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
