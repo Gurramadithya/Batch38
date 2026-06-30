@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 10vh;
+            background-color: yellowgreen;
+        }
+        nav{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            border: 1px solid red;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            height: 10vh;
+        }
+        .links a{
+                margin: 1.5rem;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: black;
+                position: relative;
+
+        }
+        .links a::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+
+            height: 2px;
+            width: 100%;
+            background: orangered;
+
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: 0.3s ease;
+        }
+        .links a:hover::before{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="logo">
+            </div>
+            <div class="links">
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">services</a>
+                <a href="">help</a>
+                <a href="">login</a>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

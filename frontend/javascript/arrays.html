@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var even=[];
+        // var odd=[];
+        // for(var i=0;i<=20;i++){
+        //     if(i%2==0){
+        //         even.unshift(i)   //push
+        //     }
+        //     else{
+        //         odd.unshift(i)   // push
+        //     }
+           
+        // }
+        // console.log(even,odd)
+
+
+        // var arr=[2,3,4,5,6,7,8,9,10,11,13,15]            //delete odd numbers
+        // for(var i=0;i<arr.length;i++){
+        //     if(arr[i] % 2 ==0 ){
+        //         delete arr[i]
+        //     }
+        // }
+        // console.log(arr)
+
+
+
+
+
+
+        //  var arr = [2, "sjhdgshdb", true, 4, 5, "200", "56", "simple", false, null, "text"];
+
+        // var total=0;
+        // var str="";
+        // var result=[]
+
+        // for(var i=0;i<arr.length;i++){
+        //     if(typeof arr[i]==="number"){
+        //         total+=arr[i]
+        //     }
+        //     else if(typeof arr[i]==="string"){
+        //         if(!isNaN (arr[i]) && arr[i]!==""){
+        //             total+=Number(arr[i])
+        //         }else{
+        //             str+=arr[i];
+        //         }
+        //     }
+        //     else{
+        //         result.push(arr[i]);
+        //     }
+        // }
+        // result.unshift(str)
+        // result.unshift(total)
+        // console.log(result)
+        
+
+        // var arr=[1,2,3,4,5,6,7,8,9]
+
+        // arr.push(10)
+        // console.log(arr)
+
+
+
+        // var colors=["red","green","blue"];
+        // var removed=colors.splice(0,1);
+        // console.log(colors)
+        // console.log(removed)
+        // console.log(removed.length)
+
+        // removed=colors.splice(1,0,"pink","yellow");
+        // console.log(colors);
+        // console.log(removed);
+
+
+
+    //     var colors=["red","blue","black"]
+	// 	console.log(colors.join())
+ 
+	// 	console.log(colors.join(""))
+	// 	console.log(colors.join("-"))
+	// 	console.log(colors.join(", "))
+
+	// // 2)toString()method
+	// 	var colors=["red","blue","black"]
+	// 	console.log(colors.toString())
+
+
+
+
+
+
+
+    // var fruits=["Apple","Banana","Mango","orange","cherry"]
+	// var subarray=fruits.slice(0,2)
+	// console.log(subarray)
+
+
+    // var pets=["cat","dog","parrot"]
+    // var wilds=["tiger","wolf","zebra"]
+    // var bugs=["ant","bee"]
+
+    // var animals=pets.concat(wilds,bugs);
+    // console.log(animals);
+    // console.log(pets)
+
+
+        //     var repeatednumber=20
+
+        // for(var i=0;i<=arr.length;i++){
+        //     if(arr[i]==repeatednumber){ 
+        //         arr.splice(i,1);
+        //         i--;
+        //     }
+        // }
+        // console.log(arr)
+
+ // 1) yesterday example repated number should be there and rest remove
+
+        // var arr=[10,20,30,40,20,50,70,20,30,40,50]
+        // var unique=[]
+        // var duplicate=[]
+
+        // for(var i=0;i<arr.length;i++){
+        //     var count=0;
+        //     for(var j=0;j<arr.length;j++){
+        //         if(arr[i]==arr[j]){
+        //             count++;
+        //         }
+        //     }
+        //     if (count>1){
+        //         duplicate.push(arr[i])
+        //     }else{
+        //         unique.push(arr[i])
+        //     }
+        // }
+        // console.log(duplicate);
+
+
+
+// 2) check an array is an palindrome or Not
+
+        // var arr=[1,2,3,4,4,3,2,1]
+        // var check=true;
+
+        // for(var i=0,j=arr.length-1;i<j;i++,j--){
+        //     if(arr[i]!=arr[j]){
+        //       check=false;
+        //         break;
+        //     }
+        // }
+        // if(check){
+        //     console.log("Palindrome")
+        // }else{
+        //     console.log("Not a palindrome")
+        // }
+
+
+// 3) who to find middle Element in and array and who to find if it was even number or odd number
+
+
+        // even numbers
+
+        // var num=[1,2,3,4,5]
+
+        // var result=Math.floor(num.length/2)
+        // console.log(num[result])
+
+        // // odd numbers
+
+        // var num=[1,2,3,4,5,6]
+        // var result1=Math.floor(num.length/2-1)
+        // var result2=Math.floor(num.length/2)        
+
+        // console.log(result1)
+        // console.log(result2)
+
+
+         var arr=[10,20,30,40,20,50,70,20,30,40,50]
+
+         for(var i=0;i<arr.length;i++){
+            for(var j=i+1;j<arr.length;j++){
+                if(arr[i]==arr[j]){
+                    arr.splice(j,1)
+                    j--;
+                }
+            }
+          
+         }
+         console.log(arr)
+
+        var arr=[10,20,30,40,20,50,70,20,30,40,50]
+        var duplicates=[]
+        var unique=[]
+
+        for(var i=0;i<arr.length;i++){
+            var count=0;
+            for(var j=0;j<arr.length;j++){
+                if(arr[i]==arr[j]){
+                    count++;
+                }
+            }
+            if(count==1){
+                unique.push(arr[i])
+            }else if(!duplicates.includes(arr[i])){
+                duplicates.push(arr[i])
+            }
+                
+        }
+        console.log(unique)
+        console.log(duplicates)
+       
+
+
+
+
+
+        
+
+
+
+
+
+    </script>
+
+</body>
+</html>
